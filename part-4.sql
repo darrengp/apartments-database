@@ -1,13 +1,16 @@
 -- 1. Show all the data in the owners table.
-
+SELECT * FROM owners;
 -- 2. Show the names of all owners.
-
+SELECT names FROM owners;
 -- 3. Show the ages of all of the owners in ascending order.
-
+SELECT age FROM owners;
 -- 4. Show the names and ages of all owners who are older than 30.
-
+SELECT name, age FROM owners
+WHERE age > 30;
 -- 5. Change Jane's age to 30.
-
+UPDATE owners
+SET age = 30 
+WHERE name = 'Jane';
 -- 6. Change Jane's name to Janet.
 
 -- 7. Show the names of the first three properties in your properties table.
